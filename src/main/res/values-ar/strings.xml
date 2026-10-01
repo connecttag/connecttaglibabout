@@ -1,0 +1,26 @@
+<resources>
+    <string name="about_app">حول التطبيق</string>
+    <string name="version">الإصدار</string>
+    <string name="support_settings_title">حول</string>
+    <string name="support_settings_desc">موارد وروابط لمساعدتك في استخدام التطبيق.</string>
+    <string name="support_about_app_title">حول التطبيق</string>
+    <string name="support_about_app_desc">معلومات الإصدار والحقوق.</string>
+    <string name="support_about_developer_title">حول المطور</string>
+    <string name="support_about_developer_desc">تواصل مع منشئي هذا التطبيق.</string>
+    <string name="support_privacy_policy_title">سياسة الخصوصية</string>
+    <string name="support_privacy_policy_desc">كيفية تعاملنا مع بياناتك.</string>
+    <string name="about_app_website">الموقع الرسمي</string>
+    <string name="about_app_social_links">تواصل معنا</string>
+    <string name="about_app_info_desc">معلومات حول التطبيق</string>
+    <string name="about_app_close_desc">إغلاق نافذة حول</string>
+    <string name="about_developer_title">عن المطور</string>
+    <string name="developer_website">موقعنا الالكتروني</string>
+    <string name="developer_email">البريد الإلكتروني</string>
+    <string name="app_email">البريد الإلكتروني</string>
+    <string name="code_repositories">حساباتنا على مستودعات الأكواد</string>
+    <string name="contact_developer">تواصل معنا</string>
+    <string name="developer_name_full">كونكت تاق - Connect Tag</string>
+    <string name="developer_description_full">للخدمات والمستلزمات التقنية والتسويق الرقمي</string>
+    <string name="Download_Our_Apps">تحميل تطبيقاتنا</string>
+    <string name="browse_our_apps_website">استعراض تطبيقاتنا من الموقع</string>
+</resources>
