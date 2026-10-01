@@ -7,19 +7,18 @@ object AboutAppPresentationModeParser {
         value: String?,
         mixedModeSelector: () -> AboutAppPresentationMode = { AboutAppPresentationMode.Dialog },
     ): AboutAppPresentationMode? {
-        val normalized = value?.trim()?.takeIf { it.isNotEmpty() } ?: return null
-        return when {
-            normalized.equals("dialog", ignoreCase = true) -> AboutAppPresentationMode.Dialog
-            normalized.equals("bottomSheet", ignoreCase = true) ||
-                normalized.equals("bottom_sheet", ignoreCase = true) ||
-                normalized.equals("bottom-sheet", ignoreCase = true) -> AboutAppPresentationMode.BottomSheet
-            normalized.equals("fullScreen", ignoreCase = true) ||
-                normalized.equals("full_screen", ignoreCase = true) ||
-                normalized.equals("full-screen", ignoreCase = true) ||
-                normalized.equals("fullscreen", ignoreCase = true) -> AboutAppPresentationMode.FullScreen
-            normalized.equals("mixed", ignoreCase = true) ||
-                normalized.equals("random", ignoreCase = true) -> mixedModeSelector()
-            else -> null
+        val appMode = org.connecttag.lib.kotlin.about.app.AboutAppPresentationModeParser.parse(value) {
+            when (mixedModeSelector()) {
+                AboutAppPresentationMode.Dialog -> org.connecttag.lib.kotlin.about.app.AboutAppPresentationMode.Dialog
+                AboutAppPresentationMode.BottomSheet -> org.connecttag.lib.kotlin.about.app.AboutAppPresentationMode.BottomSheet
+                AboutAppPresentationMode.FullScreen -> org.connecttag.lib.kotlin.about.app.AboutAppPresentationMode.FullScreen
+            }
+        } ?: return null
+
+        return when (appMode) {
+            org.connecttag.lib.kotlin.about.app.AboutAppPresentationMode.Dialog -> AboutAppPresentationMode.Dialog
+            org.connecttag.lib.kotlin.about.app.AboutAppPresentationMode.BottomSheet -> AboutAppPresentationMode.BottomSheet
+            org.connecttag.lib.kotlin.about.app.AboutAppPresentationMode.FullScreen -> AboutAppPresentationMode.FullScreen
         }
     }
 }

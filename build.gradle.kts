@@ -46,9 +46,12 @@ android {
     publishing {
         singleVariant("release") {
             withSourcesJar()
-            withJavadocJar()
         }
     }
+}
+
+val javadocJar = tasks.register<Jar>("javadocJar") {
+    archiveClassifier.set("javadoc")
 }
 
 kotlin {
@@ -62,6 +65,7 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 from(components["release"])
+                artifact(javadocJar)
 
                 groupId = project.property("LIB_GROUP").toString()
                 artifactId = project.property("LIB_ARTIFACT_ID").toString()

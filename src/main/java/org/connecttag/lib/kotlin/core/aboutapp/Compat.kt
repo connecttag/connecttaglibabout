@@ -29,6 +29,13 @@ typealias AboutAppRowAction = org.connecttag.lib.kotlin.about.AboutAppRowAction
 typealias AboutAppSocialLinkData = org.connecttag.lib.kotlin.about.AboutAppSocialLinkData
 typealias AboutAppPresentationModeParser = org.connecttag.lib.kotlin.about.compose.AboutAppPresentationModeParser
 
+// Developer Aliases
+typealias DeveloperProfile = org.connecttag.lib.kotlin.about.developer.DeveloperProfile
+typealias DeveloperRepository = org.connecttag.lib.kotlin.about.developer.DeveloperRepository
+typealias DeveloperSocialLink = org.connecttag.lib.kotlin.about.developer.DeveloperSocialLink
+typealias DeveloperAppItem = org.connecttag.lib.kotlin.about.developer.DeveloperAppItem
+typealias ConnectTagDeveloperDefaults = org.connecttag.lib.kotlin.about.developer.ConnectTagDeveloperDefaults
+
 @Composable
 fun BaseAboutAppScreen(
     appName: String,
@@ -71,7 +78,7 @@ fun ConnectTagInfoScreen(
     onBack: () -> Unit,
     onUrlClick: (String) -> Unit
 ) {
-    org.connecttag.lib.kotlin.about.ConnectTagInfoScreen(
+    org.connecttag.lib.kotlin.about.developer.ConnectTagInfoScreen(
         onBack = onBack,
         onUrlClick = onUrlClick
     )

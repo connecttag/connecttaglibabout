@@ -1,19 +1,22 @@
 <resources>
+    <!-- About App Strings -->
     <string name="about_app">About App</string>
     <string name="version">Version</string>
     <string name="support_settings_title">About</string>
     <string name="support_settings_desc">Resources and links to help you use the app.</string>
     <string name="support_about_app_title">About App</string>
     <string name="support_about_app_desc">Version information and credits.</string>
-    <string name="support_about_developer_title">About Developer</string>
-    <string name="support_about_developer_desc">Contact the creators of this app.</string>
     <string name="support_privacy_policy_title">Privacy Policy</string>
     <string name="support_privacy_policy_desc">How we handle your data.</string>
     <string name="about_app_website">Official Website</string>
     <string name="about_app_social_links">Connect with us</string>
     <string name="about_app_info_desc">Information about the app</string>
     <string name="about_app_close_desc">Close about dialog</string>
+
+    <!-- About Developer Strings -->
     <string name="about_developer_title">About Developer</string>
+    <string name="support_about_developer_title">About Developer</string>
+    <string name="support_about_developer_desc">Contact the creators of this app.</string>
     <string name="developer_website">Official Website</string>
     <string name="developer_email">Developer Email</string>
     <string name="app_email">Application Email</string>
@@ -23,4 +26,6 @@
     <string name="developer_description_full">للخدمات والمستلزمات التقنية والتسويق الرقمي</string>
     <string name="Download_Our_Apps">Download Our Apps</string>
     <string name="browse_our_apps_website">Browse Our Apps</string>
+    <string name="developer_more_apps">More Apps by Developer</string>
+    <string name="developer_contact_title">Contact &amp; Social</string>
 </resources>
